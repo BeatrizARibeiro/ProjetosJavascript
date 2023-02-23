@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="shortcut icon" href="./img/logo.png" >
+    <title>Triângulo</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Triângulo</h1>
+    </header>
+    <div class="menu">
+        
+
+        <div class="info">
+            <p>Segmento A: <span id="numa"></span></p>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="slidera">
+            </div>
+        </div>
+
+        <div class="info">
+            <p>Segmento B: <span id="numb"></span></p>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="sliderb">
+            </div>
+        </div>
+
+        <div class="info">
+            <p>Segmento C: <span id="numc"></span></p>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="sliderc">
+            </div>
+        </div>
+
+        <div id="ebtn">
+            <input type="button" value="Verificar" id="btn" onclick="verificar()">
+        </div>
+
+        <div id="res">
+
+        </div>
+    
+
+    </div>
+    
+    
+</body>
+</html>

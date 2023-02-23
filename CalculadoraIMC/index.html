@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="shortcut icon" href="./img/logo.png" >
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora IMC</h1>
+    </header>
+    <div class="menu">
+        
+
+        <div class="info">
+            <p>Informe seu peso: <span id="numpes"></span> kg</p>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="200" value="100" class="slider" id="peso">
+            </div>
+        </div>
+
+        <div class="info">
+            <p>Informe sua altura: <span id="numalt"></span> cm</p>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="200" value="100" class="slider" id="altura">
+            </div>
+        </div>
+
+        <div id="ebtn">
+            <input type="button" value="Calcular" id="btn" onclick="calcular()">
+        </div>
+
+        <div id="res">
+
+        </div>
+    
+
+    </div>
+    
+    
+</body>
+</html>
