@@ -5,7 +5,6 @@ var seg = 0
 var interval
 
 function iniciar(){
-    cont()
     interval = setInterval(cont,1000)
 }
 
