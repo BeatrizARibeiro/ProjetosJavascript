@@ -9,7 +9,7 @@ Repositório feito para armazenar os projetos que realizei para fixar meus conhe
   - Acesse: <a href="https://beatrizaribeiro.github.io/ProjetosJavascript/Cronometro/index.html">Cronômetro</a>
   
 - **Verificador de triângulo:** Verifica se os 3 valores fornecidos para cada vértice conseguem formar um triângulo e o tipo de triângulo. <br>
-  - Acesse: <a href="https://beatrizaribeiro.github.io/ProjetosJavascript/Cronometro/index.html">Triângulo</a>
+  - Acesse: <a href="https://beatrizaribeiro.github.io/ProjetosJavascript/Triangulo/index.html">Triângulo</a>
 
 ##
 
