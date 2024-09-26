@@ -215,7 +215,6 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 @media (max-width: 540px) { 
-
   .centro{
     margin: 5%;
   }
