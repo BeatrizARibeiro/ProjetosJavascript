@@ -36,24 +36,32 @@ function verificar(){
 
     if(na < nb + nc && nb < na + nc && nc < na + nb)
     {
-        res.innerHTML = `Formam um Triângulo<br><br>`
+        res.innerHTML = `<div id="linha"></div> Formam um triângulo `
         
         if(na == nb && nb == nc)
         {
-            res.innerHTML += `Equilátero<br>`
+            res.innerHTML += `<span>equilátero</span><br>`
         }
         else if(na != nb && nb != nc && na != nc)
         {
-            res.innerHTML += `Escaleno<br>`
+            res.innerHTML += `<span>escaleno</span><br>`
         }
         else
         {
-            res.innerHTML += `Isóceles<br>`
+            res.innerHTML += `<span>isóceles</span><br>`
         }
+
+        res.innerHTML += `
+            <span class="material-symbols-outlined icone">
+                check_circle
+            </span>`
     }
     else
     {
-        res.innerHTML = `Não Formam um Triângulo<br>`
+        res.innerHTML = `Não formam um triângulo<br>
+            <span class="material-symbols-outlined icone">
+                cancel
+            </span>`
     }
 }
 
