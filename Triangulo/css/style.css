@@ -8,17 +8,27 @@
   font-family: "Open Sans", sans-serif;
 }
 
-body{
+body, html {
   background-color: #702D8D;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
 
 h1{
-  margin: 30px;
+  margin: 30px 0;
   color: #FFFFFF;
   text-align: center;
   font-weight: 800;
   font-size: 35px;
   text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.centro {
+  width: 100%;
+  text-align: center;
 }
 
 .slider{
@@ -30,7 +40,9 @@ h1{
 
 .menu{
   padding: 20px;
-  margin: 0 32%;
+  width: 100%;
+  align-items: center;
+  justify-self: center;
   margin-bottom: 50px;
   background-color: #FFFFFF;
   border-radius: 30px;
@@ -202,14 +214,9 @@ input[type=range]:focus::-ms-fill-upper {
   background: #a743d6bb;
 }
 
-@media (max-width: 1150px) { 
-  .menu{
-    margin: 0 25%;
-  }
-}
+@media (max-width: 540px) { 
 
-@media (max-width: 700px) { 
-  .menu{
-    margin: 0 5%;
+  .centro{
+    margin: 5%;
   }
 }
