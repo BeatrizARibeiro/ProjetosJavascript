@@ -202,7 +202,13 @@ input[type=range]:focus::-ms-fill-upper {
   background: #a743d6bb;
 }
 
-@media (max-width: 1000px) { 
+@media (max-width: 1150px) { 
+  .menu{
+    margin: 0 25%;
+  }
+}
+
+@media (max-width: 700px) { 
   .menu{
     margin: 0 5%;
   }
