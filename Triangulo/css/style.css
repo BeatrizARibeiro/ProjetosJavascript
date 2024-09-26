@@ -29,6 +29,7 @@ h1{
 .centro {
   width: 100%;
   text-align: center;
+  max-width: 500px;
 }
 
 .slider{
@@ -88,6 +89,7 @@ p{
   color: #1F1F1F;
   font-weight: bold;
   margin-bottom: 12px;
+  text-align: start;
 }
 
 span{
