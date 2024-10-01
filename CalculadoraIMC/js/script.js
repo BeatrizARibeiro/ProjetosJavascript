@@ -14,7 +14,7 @@ function calcular(){
     res.innerHTML = `<div id="linha"></div>`
 
     if(!isNaN(parseFloat(imc)) && isFinite(imc)){
-        res.innerHTML = `Seu IMC ficou no valor de ${imc.toFixed(2).replace('.', ',')} <br><br>`
+        res.innerHTML += `Seu IMC ficou no valor de ${imc.toFixed(2).replace('.', ',')} <br><br>`
 
         if(imc < 18.5){
             res.innerHTML += `Você está <span class="vermelho">abaixo do peso </span><br>`
@@ -60,7 +60,5 @@ function calcular(){
                 cancel
             </span>`
     }
-   
+
 }
-
-

@@ -73,12 +73,24 @@ button{
     background-color: #7AE5D2;
 }
 
+#iniciar:hover{
+    background-color: #64beae;
+}
+
 #pausar{
     background-color: #F87BC9;
 }
 
+#pausar:hover{
+    background-color: #da68ae;
+}
+
 #zerar{
     background-color: #F3D184;
+}
+
+#zerar:hover{
+    background-color: #ceac5e;
 }
 
 button:hover{
