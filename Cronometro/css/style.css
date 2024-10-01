@@ -1,47 +1,101 @@
-body{
-    font: normal 15pt Arial;
-    background: url(../fundo.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
+* { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    font-family: "Open Sans", sans-serif;
+}
+
+body, html{
+    background-image: linear-gradient(to right bottom, #c4eaff, #c3e4ff, #c8ddff, #d2d4ff, #e1caff, #efc5f3, #f9c1e5, #ffbfd7, #ffc5ca, #ffcec1, #ffd8bd, #fbe2bf);
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
 h1{
-    color: rgb(29, 27, 27);
+    margin: 20px 0;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 800;
+    font-size: 38px;
+    text-shadow: 3px 4px 2px rgba(0, 0, 0, 0.30);
 }
 
-div{
-    border-radius: 10px;
-    margin: 400px;
-    padding: 20px;
-    margin-top: 200px;
+.centro {
+    width: 100%;
     text-align: center;
-    border: 3px white solid;
+    max-width: 500px;
+}
+
+.menu{
+    padding: 25px 50px;
+    width: 100%;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.50);
+    border-radius: 30px;
+    border: 5px solid #FFFFFF;
+    box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.30);
+}
+
+h2{
+    color: #646060;
+    font-size:39px;
+    margin: 15px 0 20px;
+    font-weight: 700;
 }
 
 button{
-    font: normal 11pt Arial;
+    font-size: 18px;
     font-weight: bold;
-    height: 2.5em;
-    width: 5.5em;
-    margin: 8px;
-    border: none;
-    border-radius: 10px;
-    color: rgb(29, 27, 27);
+    margin: 10px;
+    width: 98px;
+    height: 42px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50px;
+    color: #FFFFFF;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;    
+    justify-content: center;  
+    flex-wrap: wrap; 
 }
 
 #iniciar{
-    background-color: rgba(177, 253, 210, 0.727);
+    background-color: #7AE5D2;
 }
 
 #pausar{
-    background-color: rgba(253, 177, 195, 0.774);
+    background-color: #F87BC9;
 }
 
 #zerar{
-    background-color: rgba(177, 192, 253, 0.746);
+    background-color: #F3D184;
 }
 
 button:hover{
     cursor:pointer;
+}
+
+@media (max-width: 540px) { 
+    .centro{
+      margin: 5%;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    .menu{
+        padding: 25px;
+    }
 }
 

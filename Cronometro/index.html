@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    <title>Cronômetro</title>
-</head>
-<body>
-    <div>
-        <h1 id="relogio">00:00:00</h1>
-        <button id="iniciar" onclick="iniciar()">Iniciar</button>
-        <button id="pausar" onclick="pausar()">Pausar</button>
-        <button id="zerar" onclick="zerar()">Zerar</button>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+        <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+        <title>Cronômetro</title>
+    </head>
+    <body>
+        <div class="centro">
+            <h1>Cronômetro</h1>
+
+            <div class="menu">
+                <h2 id="relogio">00:00:00:00</h2>
+
+                <div class="botoes">
+                    <button id="iniciar" onclick="iniciar()">Iniciar</button>
+                    <button id="pausar" onclick="pausar()">Pausar</button>
+                    <button id="zerar" onclick="zerar()">Zerar</button>
+                </div>
+                
+            </div>
+            
+        </div>
+    </body>
 </html>

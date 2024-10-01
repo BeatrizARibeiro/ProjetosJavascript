@@ -5,6 +5,7 @@ var btnz = document.getElementById('zerar')
 var hor = 0
 var min = 0
 var seg = 0
+var mil = 0
 var interval
 
 btnp.disabled = true;
@@ -12,7 +13,7 @@ btnz.disabled = true;
 
 function iniciar(){
     cont()
-    interval = setInterval(cont,1000)
+    interval = setInterval(cont, 10)
     btni.disabled = true;
     btnp.disabled = false;
     btnz.disabled = false;
@@ -29,7 +30,8 @@ function zerar(){
     hor = 0
     min = 0
     seg = 0
-    rel.innerHTML = '00:00:00'
+    mil = 0
+    rel.innerHTML = '00:00:00:00'
     btni.disabled = false;
     btnp.disabled = false;
     btnp.disabled = false;
@@ -44,8 +46,15 @@ function addzero(num){
     }
 }
 
+
 function cont(){
-    seg++
+    mil ++; 
+    
+    if (mil >= 100) {
+        seg++;
+        mil = 0;
+    }
+
     if(seg == 60){
         min++
         seg = 0
@@ -54,5 +63,5 @@ function cont(){
         hor++
         min = 0
     }
-    rel.innerHTML = addzero(hor) + ':' + addzero(min) + ':' + addzero(seg)
+    rel.innerHTML = addzero(hor) + ':' + addzero(min) + ':' + addzero(seg) + ':' + addzero(mil)
 }
