@@ -6,41 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
-    <link rel="shortcut icon" href="./img/logo.png" >
-    <title>Calculadora IMC</title>
+    <link rel="shortcut icon" href="./img/icon.png" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,0" />
+    <title>IMC</title>
 </head>
 <body>
-    <header>
-        <h1>Calculadora IMC</h1>
-    </header>
-    <div class="menu">
+    <div class="centro">
+        <header>
+            <h1>Calculadora de IMC</h1>
+        </header>
+
+        <div class="menu">
+            <div class="info">
+                <p class="texto">Informe seu peso (kg): </p>
+                <input type="text" name="peso" id="peso" class="resposta">
+            </div>
+
+            <div class="info">
+                <p class="texto">Informe sua altura (cm): </p>
+                <input type="text" name="altura" id="altura" class="resposta">
+            </div>
+
+            <div id="ebtn">
+                <input type="button" value="Calcular" id="btn" onclick="calcular()">
+            </div>
+
+            <div id="res"></div>
         
-
-        <div class="info">
-            <p>Informe seu peso: <span id="numpes"></span> kg</p>
-            <div class="slidecontainer">
-                <input type="range" min="1" max="200" value="100" class="slider" id="peso">
-            </div>
         </div>
-
-        <div class="info">
-            <p>Informe sua altura: <span id="numalt"></span> cm</p>
-            <div class="slidecontainer">
-                <input type="range" min="1" max="200" value="100" class="slider" id="altura">
-            </div>
-        </div>
-
-        <div id="ebtn">
-            <input type="button" value="Calcular" id="btn" onclick="calcular()">
-        </div>
-
-        <div id="res">
-
-        </div>
-    
-
     </div>
-    
     
 </body>
 </html>
