@@ -1,4 +1,4 @@
-<h2> <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com/?color=e269c7&size=30&center=true&vCenter=true&font=Paytone+One&duration=1&repeat=false&random=false&width=1000&lines=Meus+Projetos+em+Javascript" alt="Typing SVG" /></a></h2>
+<h2> <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com/?color=e269c7&size=30&center=true&vCenter=true&font=Paytone+One&duration=1&repeat=false&random=false&width=1000&lines=Meus+projetos+em+Javascript" alt="Typing SVG" /></a></h2>
 
 Repositório feito para armazenar os projetos que realizei para fixar meus conhecimentos em javascript. Sendo eles:
 
